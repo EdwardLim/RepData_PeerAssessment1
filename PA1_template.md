@@ -146,7 +146,7 @@ plot(
         type = "l",
         main = "Time Series Plot of the Average Number of Steps\n Taken Across All Days for each 5 Minute Interval",
         xlab = "5-Minute Interval",
-        ylab = "Average Number of Steps Taken,\n Across All Days"
+        ylab = "Average Number of Steps Taken Across All Days"
 )
 ```
 
@@ -162,6 +162,7 @@ dfInterval[dfInterval$mean_steps==max(dfInterval$mean_steps),]
 ##     interval mean_steps
 ## 104      835   206.1698
 ```
+From the above, the interval 0835 is the time when the maximum number of steps is taken (averaged across all days).
 
 ## Imputing missing values
 
